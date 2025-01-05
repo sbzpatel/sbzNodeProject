@@ -1,0 +1,1 @@
+module.exports = { name: "Shahbaz Patel", email: "sbzpatel@gmail.com", age: "35" }
