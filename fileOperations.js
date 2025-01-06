@@ -5,9 +5,9 @@ const dirPath = path.join(__dirname, "files")
 console.log(dirPath);
 const fileName = `${dirPath}/sbz.txt`;
 
-fs.writeFileSync(fileName, "Its a sbz file created in files directory using node file system.");
-
 // fs.writeFileSync("sbz.txt", "It's a sbz file of great coder of the world!!!!!!");
+
+fs.writeFileSync(fileName, "Its a sbz file created in files directory using node file system.");
 
 
 
@@ -35,7 +35,7 @@ fs.appendFile(fileName, " and its a appended portion of a file.", (err) => {
 //     if(!err) console.log("file name is renamed.....");
 // });
 
-fs.rename(fileName, "sbz1.txt", (err) => {
+fs.rename(fileName, `${dirPath}/sbz1.txt`, (err) => {
     if(!err) console.log("file name is renamed.....");
 });
 
@@ -43,4 +43,4 @@ fs.rename(fileName, "sbz1.txt", (err) => {
 
 // fs.unlinkSync("sbz1.txt");
 
-fs.unlinkSync(fileName);
+fs.unlinkSync(`${dirPath}/sbz1.txt`);
