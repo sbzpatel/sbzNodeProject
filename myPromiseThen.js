@@ -18,4 +18,3 @@ waitingData.then((data) => {
 });
 
 // console.log(a+b);
-
