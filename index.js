@@ -39,4 +39,5 @@ console.log("################################# MongoDB (Mongoose) ##############
     console.log("30) deleteDocument.js");
     console.log("31) mongooseBuildInValidation.js");
     console.log("31) mongooseCustomValidation.js");
+    console.log("31) myValidatorPackage.js");
 console.log("################################# MongoDB (Mongoose) ###############################");
