@@ -6,4 +6,9 @@ app.get("", (req, res) => {
     res.send(`Welcome, ${req.query.name}`)
 });
 
+app.get("/help/:username", (req, res) => {
+    console.log(req.params.username);
+    res.send(`Hi ${req.params.username}`);
+});
+
 app.listen(4000);
