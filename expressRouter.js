@@ -6,7 +6,9 @@ const router = new express.Router();
 
 app.use(router);
 
-router.get("/sbz",(req, res) => {
+const ageMiddleware = require("./middleware");
+
+router.get("/sbz", ageMiddleware, (req, res) => {
     res.send("<center><h1>Welcome to Sbz Special Page</h1></center>");
 });
 
